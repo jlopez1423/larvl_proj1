@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+// 	$people = ['Jose', 'Serena','Ginger'];
+//     return view( 'welcome', compact( 'people' ) );
+// });
+
+// Route::get('about', function() {
+// 	return view('pages.about');
+// });
+
+//Going over controllers
+Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
+
